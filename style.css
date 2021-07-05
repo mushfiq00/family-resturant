@@ -1,3 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+*body{
+  padding: 0;
+  margin: 0;
+
+}
+@media (max-width: 700px) {
+  body{
+    width: 100%;
+  }
+  }
 .header {
   min-height: 100vh;
   width: 100%;
@@ -175,7 +189,7 @@ nav {
   min-height: 100vh;
 }
 
-#special .heading h1 {
+.head-new {
   font-size: 4rem;
   color: #000;
   padding-top: 7rem;
@@ -183,7 +197,7 @@ nav {
   color: #fff;
 }
 
-#special .heading h1 span {
+.yellow {
   color: #FFF200;
 }
 
@@ -222,7 +236,10 @@ nav {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
+.spcl{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
 #special .card-container .card p {
   font-size: 1.4rem;
   margin: 2rem 0;
@@ -287,15 +304,19 @@ nav {
 
 
 /*menu--*/
-
+#menu{
+  background-color: black;
+}
 .wrapper{
 width:100%;
 margin:100px auto;
+color: white;
 }
 .title{
 text-align:center;
 margin-bottom:7vw;
 }
+
 .title h4{
 text-transform:capitalize;
 font-size: 4rem;
@@ -369,7 +390,7 @@ border-bottom:0.16233766233766234vw dashed #333;
 margin-bottom:0.8116883116883117vw;
 padding-bottom:0.8116883116883117vw;
 }
-.single-menu h4 span{
+.single-menu p span{
 float:right;
 color:#ff7720;
 font-style:italic;
@@ -415,7 +436,7 @@ padding: 30px;
 .contact-form h1 {
 margin-bottom: 10px;
 }
-.contact-form-txt {
+#contact-form-txt {
 width: 100%;
 height: 40px;
 color: #000;
@@ -425,10 +446,10 @@ outline: none;
 margin-bottom: 20px;
 padding: 15px;
 }
-.contact-form-txt::placeholder {
+#contact-form-txt::placeholder {
 color: #aaa;
 }
-.contact-form-txtarea {
+#contact-form-txtarea {
 width: 100%;
 height: 130px;
 color: #000;
@@ -439,13 +460,14 @@ margin-bottom: 20px;
 padding: 15px;
 font-family: "Poppins", sans-serif;
 }
-.contact-form-txtarea::placeholder {
+#contact-form-txtarea::placeholder {
 color: #aaa;
 }
-.contact-form-btn {
-width: 40%;
+/* .contact-form-btn {
+width: 67%;
+
 margin-right: 60%;
-font-size: 1.6vw !important;
+font-size: 2w;
 border: none;
 outline: none;
 border-radius: 50px;
@@ -455,7 +477,18 @@ text-transform: uppercase;
 padding: 10px 0;
 cursor: pointer;
 
+} */
+#btn{
+  width: 50%;
+  background-color: #ff7720;
+  color: whitesmoke;
+  cursor: pointer;
+  border: none;
+outline: none;
+border-radius: 50px;
+
 }
+
 @media (max-width: 700px) {
   .contact-form{
       padding: 0;
@@ -482,3 +515,162 @@ video{
   position: relative;
   z-index: -1;
 }
+
+
+
+
+/* -----Footer----- */
+
+
+
+
+.social-icon{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  margin: auto 2vw;
+  /* box-shadow: 3px 3px 10px  #aeaeae;
+   box-shadow: -4vw --4vw 6vw white; */
+   margin-top: 3vw;
+   text-align: center;
+   line-height: 50px;
+   color: rgb(255, 13, 13);
+   cursor: pointer; 
+   border-radius: 50%;
+
+}
+ 
+.social-icon:nth-child(1):hover{
+  color: white;
+  border-radius: 50%;
+  background-color: #e4405f;
+}
+.social-icon:nth-child(2):hover{
+  color: white;
+  border-radius: 50%;
+  background-color: #55acee;
+}
+
+
+.social-icon:nth-child(3):hover{
+  color: white;
+  border-radius: 50%;
+  background-color:#3b5999 !important;
+}
+
+
+.social-icon:nth-child(4):hover{
+  color: white;
+  border-radius: 50%;
+  background-color: #cd201f;
+}
+/* .footer{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+.copy{
+  color: white;
+  align-content: left;
+} */
+#foot-img{
+  width: 100px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  }
+  
+  body {
+  font-family: poppins;
+  margin: 0;
+  display: grid;
+  font-size: 14px;
+  }
+  .footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  margin-top: 3vw;
+  color: #fff;
+  background-color: rgb(5, 5, 10);
+  }
+  
+  .footer > * {
+  flex:  1 100%;
+  }
+  
+  .l-footer {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+  }
+  
+  h2 {
+  font-weight: 400;
+  font-size: 15px;
+  }
+  
+  .footer ul {
+  list-style: none;
+  padding-left: 0;
+  }
+  
+  .footer li {
+  line-height: 2em;
+  }
+  
+  .footer a {
+  text-decoration: none;
+  }
+  
+  .r-footer {
+  display: flex;
+  flex-flow: row wrap;
+  }
+  
+  .r-footer > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+  }
+  
+  .box a {
+  color: #999;
+  }
+  
+  .h-box {
+  column-count: 2;
+  column-gap: 1.25em;
+  }
+  
+  .b-footer {
+  text-align: center;
+  color: #999;
+  padding-top: 50px;
+  }
+  
+  .l-footer p {
+  padding-right: 20%;
+  color: #999;
+  }   
+  
+  @media screen and (min-width: 700px) {
+  .r-footer > * {
+  flex: 1;
+  }
+  
+  .features {
+  flex-grow: 2;
+  }
+  
+  .l-footer {
+  flex: 1 0px;
+  }
+  
+  .r-footer {
+  flex: 2 0px;
+  }
+  }
+  
+
+
