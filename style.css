@@ -364,9 +364,7 @@ margin-bottom:5.21512vw;
 padding-bottom:5.21512vw;
 border-bottom:0.1303780964797914vw solid #ddd;
 }
-.single-menu:nth-child(5), .single-menu:nth-child(6){
-border-bottom:0;
-}
+
 .single-menu{
 display:flex;
 flex-direction:row;
